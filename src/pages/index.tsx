@@ -10,6 +10,7 @@ import Layout from "../components/Layout";
 import { ReactElement } from "react";
 import HomeUnAuthor from "../components/HomeUnAuthor";
 import LanguageInitialize from "../components/LanguageInitialize";
+import HomeAuthored from "../components/HomeAuthored/HomeAuthored";
 
 const Home: NextPageWithLayout = () => {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
@@ -23,7 +24,8 @@ const Home: NextPageWithLayout = () => {
       </Head>
 
       <main>
-        <LanguageInitialize />
+        {/*   <LanguageInitialize /> */}
+        <HomeAuthored />
       </main>
     </>
   );
